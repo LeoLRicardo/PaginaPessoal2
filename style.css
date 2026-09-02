@@ -1,0 +1,122 @@
+*{  margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-fundo: #161614;
+    --cor-texto: #788d63;
+    --cor-navegador: #e6e9cc;
+    --cor-secoes: #c7e5b3;
+    --cor-selecionado: #a3e635;
+    --cor-link: rgb(116, 167, 82);
+}
+h1 { font-family: "Amarante", serif; 
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: "Amarante";
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+header p{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.navegador{
+    text-decoration: none;
+    color: var(--cor-navegador);
+    font-size: 1.5rem;
+}
+.navegadorselecionado{
+    text-decoration: none;
+    color: var(--cor-selecionado);
+    font-size: 1.5rem;
+}
+.navegador:hover { 
+    color: var(--cor-selecionado); 
+}
+
+.meu-grid{
+    display: flex;
+    justify-content: center;
+}
+.gostos{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 1rem;
+}
+.gostos div{
+    background-color: var(--cor-secoes);
+    color: var(--cor-fundo);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section{
+    max-width: 600px;
+}
+section h1{
+    margin-bottom: 2rem;
+}
+section p{
+    margin-bottom: 2rem;
+    color: var(--cor-secoes);
+}
+section a{
+    text-decoration: underline;
+    color: var(--cor-link);
+}
+
+img{
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-imagem {
+    position: relative;
+    display: inline-block; 
+    max-width: 100%; 
+}
+
+.rodape-imagem {
+    position: absolute;
+    bottom: 15px;
+    right: 15px; 
+    width: auto; 
+    margin: 0;
+    
+    background-color: rgba(19, 19, 17, 0.795); 
+    padding: 8px 12px;
+    border-radius: 8px;
+}
